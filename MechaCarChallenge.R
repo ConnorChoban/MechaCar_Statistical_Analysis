@@ -1,4 +1,5 @@
 library(tidyverse)
+library(dplyr)
 
 mechaCar <- read.csv("MechaCar_mpg.csv", check.names=F, stringsAsFactors = F)
 head(mechaCar)

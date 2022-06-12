@@ -27,6 +27,26 @@ We can come to several conclusions by analyzing the MPG data.
 
 ## T-Tests on Suspension Coils
 
+T-test for all manufacturing lots: 
+
+<img width="409" alt="Screen Shot 2022-06-12 at 5 44 26 PM" src="https://user-images.githubusercontent.com/99847786/173255338-c6b7e2d5-a12b-4b63-93b5-79f7b545ebba.png">
+
+
+T-test for lot 1 
+
+<img width="538" alt="Screen Shot 2022-06-12 at 5 53 24 PM" src="https://user-images.githubusercontent.com/99847786/173255344-921ebb7b-3332-40bf-b406-93ddd269cccb.png">
+
+T-test for lot 2
+
+<img width="538" alt="Screen Shot 2022-06-12 at 5 52 08 PM" src="https://user-images.githubusercontent.com/99847786/173255349-d8ddaae3-b6f5-4d5f-b9e1-f47a0617089c.png">
+
+
+T-test for lot 3
+
+<img width="538" alt="Screen Shot 2022-06-12 at 5 51 59 PM" src="https://user-images.githubusercontent.com/99847786/173255350-7437edfe-f68c-46ab-8da8-f7ef5e51dde5.png">
+
+
+
 
 
 ## Study Design: MechaCar vs Competition

@@ -10,13 +10,15 @@ We can come to several conclusions by analyzing the MPG data.
 
 - From the output of the code below, we can see that the vehicle length and ground clearance variables provide a non-random amount of variance to the MPG     values in our dataset, with coefficients of 2.60e-12 and 5.21e-08 respectively. This means that these variables have a greater impact on MPG whereas       other variables, such as vehicle weight, spoiler angle, and All Wheel Drive(AWD), have a minimal impact on MPG. 
 
-- The p-value produced by our analysis was 5.35e-11, which is much lower than our assumed significance level of 0.05%. As such, there is sufficient           evidence to reject our null hypothesis, which means that the slope of our linear model is not zero
+- The p-value produced by our analysis was 5.35e-11, which is much lower than our assumed significance level of 0.05%. As such, there is sufficient           evidence to reject our null hypothesis, which means that the slope of our linear model is not zero. 
 
 - From our analysis we can see that the r-squared value is 0.7149 which indicates that there is an approximately 71.49% chance that future data points will   fit this model. As such, while this model does effectively predict mpg of prototypes, there is room for improvement. 
 
 <img width="594" alt="Screen Shot 2022-06-11 at 10 30 16 PM" src="https://user-images.githubusercontent.com/99847786/173211914-9b009f79-e702-4276-8e48-232747dc40e2.png">
 
 ## Summary Statistics on Suspension Coils
+
+In this section of the analysis, we evaluate the company's manufacturing data to see if the variance of the suspension coils exceeds 1oo pounds per square inch. As seen below, across all lots we see that the variance is approximately 62.9. Looking at the lots individually, we can see that lots 1 and 2 both meet the design specifications, with variances of 0.98 and 7.47 respectively. However, lot 3 has a variance of 170.29 which is far above our tolerance limit of 100 pounds per square inch.
 
 <img width="530" alt="Screen Shot 2022-06-12 at 5 41 05 PM" src="https://user-images.githubusercontent.com/99847786/173254830-85604ef0-7d6f-4130-85fe-096c2daa1cd5.png">
 
@@ -26,6 +28,13 @@ We can come to several conclusions by analyzing the MPG data.
 
 
 ## T-Tests on Suspension Coils
+
+We'll continue to examine our analysis to determine if all manufacturing lots and each lot individually are statistically different from the population mean (mu) of 1,500 PSI, by testing the hypothesis' below:
+
+H0 : There is no statistical difference between the observed sample mean and its presumed population mean.
+Ha : There is a statistical difference between the observed sample mean and its presumed population mean.
+
+We'll assume the significance level in this analysis is 0.05 percent. Looking at the t-test for all manufacturing lots, we can see that the p-value is 0.0628, which is above our significance level, and therefore we do not have enough evidence to reject the null hypothesis. Similarily, as seen in the below screenshots, the p-values for lots 1 and 2 were 1 and 0.61 respectively. Again, we don't have enough evidence to reject the null hypothesis, with respect to these samples. However, the p-value for lot 3 was 0.04, which is below the significance level. As such, we can reject the null hypothesis with repsect to this sample, and explore the alternative hypothesis. 
 
 T-test for all manufacturing lots: 
 
@@ -46,7 +55,9 @@ T-test for lot 3
 <img width="538" alt="Screen Shot 2022-06-12 at 5 51 59 PM" src="https://user-images.githubusercontent.com/99847786/173255350-7437edfe-f68c-46ab-8da8-f7ef5e51dde5.png">
 
 
-
-
-
 ## Study Design: MechaCar vs Competition
+
+
+
+H0 : There is no statistical difference between the observed sample mean and its presumed population mean.
+Ha : There is a statistical difference between the observed sample mean and its presumed population mean.

@@ -7,7 +7,8 @@
 
 We can come to several conclusions by analyzing the MPG data.
 
-- From the output of the code below, we can see that the vehicle length and ground clearance variables provide a non-random amount of variance to the MPG     values in our dataset. 
+- From the output of the code below, we can see that the vehicle length and ground clearance variables provide a non-random amount of variance to the MPG     values in our dataset, with coefficients of 2.60e-12 and 5.21e-08 respectively. 
+
 - Intercept
 - Reject Null Hypothesis
 

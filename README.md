@@ -2,7 +2,7 @@
 
 ## Overivew of Analysis
 
-The purpose of this analysis is evaluate how several factors impact the new MechaCar prototype for AutosRUs. By performing several different analysis' across the production data, we can gain valuable insights and make suggestions to the development team. 
+The purpose of this analysis is evaluate how several factors impact the new MechaCar prototype for AutosRUs. By examinign several different factos across the production data, we can gain valuable insights and make suggestions to the development team. 
 
 ## Linear Regression to Predict MPG
 
@@ -29,7 +29,7 @@ In this section of the analysis, we evaluate the company's manufacturing data to
 
 ## T-Tests on Suspension Coils
 
-We'll continue to examine our analysis to determine if all manufacturing lots and each lot individually are statistically different from the population mean (mu) of 1,500 PSI, by testing the hypothesis' below:
+We'll continue to examine our analysis to determine if all manufacturing lots and each individual lot are statistically different from the population mean (mu) of 1,500 PSI, by testing the hypotheses below:
 
 - H0 : There is no statistical difference between the observed sample mean and its presumed population mean.
 - Ha : There is a statistical difference between the observed sample mean and its presumed population mean.
@@ -57,7 +57,7 @@ T-test for lot 3
 
 ## Study Design: MechaCar vs Competition
 
-In this analysis we examined variables that affect performance such as Miles per Gallon (MPG), Pounds per Square Inch (PSI), and Suspension Coils. We can take our analysis a step further by designing a statistical study that explores other metrics. For the purpose of this analysis, we'll design a study that evaluates the lfietime maintenance cost of the vehicle against competition. 
+In this analysis we examined variables that affect performance such as Miles per Gallon (MPG), Pounds per Square Inch (PSI), and Suspension Coils. We can take our analysis a step further by designing a statistical study that explores other metrics. For the purpose of this analysis, we'll design a study that evaluates the lfietime maintenance cost of the vehicle against competing models. 
 
 We'll use maintenance cost as our metric for simplicity, but we can also evaluate factors such as the initial cost of the vehicle and cost of production.
 
@@ -66,6 +66,6 @@ We'll formulate the below null and alternative hypothesis:
 - H0 : There is no statistical difference between the observed lifetime maintenance cost and the maintenance cost of competing models. 
 - Ha : There is a statistical difference between the observed lifetime maintenance cost and the maintenance cost of competing models. 
 
-In this case we'll use a t-test to determine if the lifetime maintenance cost is statistically different from the mean of all models across vehicle types. This way, we can first determine if the lifetime maintenance cost is significantly higher or lower, and should it be lower than average, we could use this as a selling point to our potential customers. We could also a linear regression model to predict the future costs of maintaining the vehicle so that we can make adjustments to the model accordingly, either to be more budget friendly, or to autobody service appointments to ensure the car is running smooth and the customer is happy. 
+In this case we'll use a t-test to determine if the lifetime maintenance cost is statistically different from the mean of all models across vehicle types. This way, we can first determine if the lifetime maintenance cost is significantly higher or lower, and should it be lower than average, we could use this as a selling point to our potential customers. We could also use a linear regression model to predict the future costs of maintaining the vehicle so that we can make adjustments to the model accordingly, either to be more budget friendly, or to agend autobody service appointments to ensure the car is running smoothly and the customer is happy. 
 
 In order to run this test, we'll need information regarding the expected lifetime maintenance cost of our prototype, and the maintenance costs of other models from competing brands; this information is usually available in the public domain, and we can use our abilities with web scraping to accumulate data for our analysis. Once we have sufficient data, we can run the analysis and test our hypothesis. 

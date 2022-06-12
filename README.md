@@ -18,6 +18,12 @@ We can come to several conclusions by analyzing the MPG data.
 
 ## Summary Statistics on Suspension Coils
 
+<img width="530" alt="Screen Shot 2022-06-12 at 5 41 05 PM" src="https://user-images.githubusercontent.com/99847786/173254830-85604ef0-7d6f-4130-85fe-096c2daa1cd5.png">
+
+
+<img width="668" alt="Screen Shot 2022-06-12 at 5 40 12 PM" src="https://user-images.githubusercontent.com/99847786/173254828-e66f3213-85dd-42fb-a9d8-c3f600fe17c3.png">
+
+
 
 ## T-Tests on Suspension Coils
 

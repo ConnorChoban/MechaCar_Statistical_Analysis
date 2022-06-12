@@ -18,7 +18,7 @@ We can come to several conclusions by analyzing the MPG data.
 
 ## Summary Statistics on Suspension Coils
 
-In this section of the analysis, we evaluate the company's manufacturing data to see if the variance of the suspension coils exceeds 1oo pounds per square inch. As seen below, across all lots we see that the variance is approximately 62.9. Looking at the lots individually, we can see that lots 1 and 2 both meet the design specifications, with variances of 0.98 and 7.47 respectively. However, lot 3 has a variance of 170.29 which is far above our tolerance limit of 100 pounds per square inch.
+In this section of the analysis, we evaluate the company's manufacturing data to see if the variance of the suspension coils exceeds 100 pounds per square inch. As seen below, across all lots we see that the variance is approximately 62.9. Looking at the lots individually, we can see that lots 1 and 2 both meet the design specifications, with variances of 0.98 and 7.47 respectively. However, lot 3 has a variance of 170.29 which is far above our tolerance limit of 100 pounds per square inch.
 
 <img width="530" alt="Screen Shot 2022-06-12 at 5 41 05 PM" src="https://user-images.githubusercontent.com/99847786/173254830-85604ef0-7d6f-4130-85fe-096c2daa1cd5.png">
 
@@ -31,8 +31,8 @@ In this section of the analysis, we evaluate the company's manufacturing data to
 
 We'll continue to examine our analysis to determine if all manufacturing lots and each lot individually are statistically different from the population mean (mu) of 1,500 PSI, by testing the hypothesis' below:
 
-H0 : There is no statistical difference between the observed sample mean and its presumed population mean.
-Ha : There is a statistical difference between the observed sample mean and its presumed population mean.
+- H0 : There is no statistical difference between the observed sample mean and its presumed population mean.
+- Ha : There is a statistical difference between the observed sample mean and its presumed population mean.
 
 We'll assume the significance level in this analysis is 0.05 percent. Looking at the t-test for all manufacturing lots, we can see that the p-value is 0.0628, which is above our significance level, and therefore we do not have enough evidence to reject the null hypothesis. Similarily, as seen in the below screenshots, the p-values for lots 1 and 2 were 1 and 0.61 respectively. Again, we don't have enough evidence to reject the null hypothesis, with respect to these samples. However, the p-value for lot 3 was 0.04, which is below the significance level. As such, we can reject the null hypothesis with repsect to this sample, and explore the alternative hypothesis. 
 
@@ -57,7 +57,15 @@ T-test for lot 3
 
 ## Study Design: MechaCar vs Competition
 
+In this analysis we examined variables that affect performance such as Miles per Gallon (MPG), Pounds per Square Inch (PSI), and Suspension Coils. We can take our analysis a step further by designing a statistical study that explores other metrics. For the purpose of this analysis, we'll design a study that evaluates the lfietime maintenance cost of the vehicle against competition. 
 
+We'll use maintenance cost as our metric for simplicity, but we can also evaluate factors such as the initial cost of the vehicle and cost of production.
 
-H0 : There is no statistical difference between the observed sample mean and its presumed population mean.
-Ha : There is a statistical difference between the observed sample mean and its presumed population mean.
+We'll formulate the below null and alternative hypothesis:
+
+- H0 : There is no statistical difference between the observed lifetime maintenance cost and the maintenance cost of competing models. 
+- Ha : There is a statistical difference between the observed lifetime maintenance cost and the maintenance cost of competing models. 
+
+In this case we'll use a t-test to determine if the lifetime maintenance cost is statistically different from the mean of all models across vehicle types. This way, we can first determine if the lifetime maintenance cost is significantly higher or lower, and should it be lower than average, we could use this as a selling point to our potential customers. We could also a linear regression model to predict the future costs of maintaining the vehicle so that we can make adjustments to the model accordingly, either to be more budget friendly, or to autobody service appointments to ensure the car is running smooth and the customer is happy. 
+
+In order to run this test, we'll need information regarding the expected lifetime maintenance cost of our prototype, and the maintenance costs of other models from competing brands; this information is usually available in the public domain, and we can use our abilities with web scraping to accumulate data for our analysis. Once we have sufficient data, we can run the analysis and test our hypothesis. 

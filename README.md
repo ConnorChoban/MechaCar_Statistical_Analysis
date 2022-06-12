@@ -2,12 +2,13 @@
 
 ## Overivew of Analysis
 
+The purpose of this analysis is evaluate how several factors impact the new MechaCar prototype for AutosRUs. By performing several different analysis' across the production data, we can gain valuable insights and make suggestions to the development team. 
 
 ## Linear Regression to Predict MPG
 
 We can come to several conclusions by analyzing the MPG data.
 
-- From the output of the code below, we can see that the vehicle length and ground clearance variables provide a non-random amount of variance to the MPG     values in our dataset, with coefficients of 2.60e-12 and 5.21e-08 respectively. 
+- From the output of the code below, we can see that the vehicle length and ground clearance variables provide a non-random amount of variance to the MPG     values in our dataset, with coefficients of 2.60e-12 and 5.21e-08 respectively. This means that these variables have a greater impact on MPG whereas       other variables, such as vehicle weight, spoiler angle, and All Wheel Drive(AWD), have a minimal impact on MPG. 
 
 - Intercept
 - Reject Null Hypothesis
